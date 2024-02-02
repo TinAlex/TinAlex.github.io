@@ -1,4 +1,7 @@
 @media screen and (max-width: 1720px) {
+    :root {
+        --border-radius: 56px;
+      }
     .hiw-line1 {
         left: 7%;
     }
@@ -30,6 +33,9 @@
 /* @media screen and (max-width: 1420px) {  */
 
 @media screen and (max-width: 1420px) {
+    .footer-link-img {
+        max-height: 120px ;
+      }
 
     .logo-svg,
     .footer-logo-img {
@@ -254,6 +260,19 @@
 }
 
 @media screen and (max-width: 1035px) {
+    .logo {
+        padding-left: 25px;
+    }
+    .about-proj__img {
+        max-width: 100px;
+        top: -50px; 
+    }
+    .footer-link-img {
+        max-height: 70px;
+      }
+    :root {
+        --border-radius: 36px;
+      }
     .swiper {
         border-radius: 70px;
         max-height: 650px;
@@ -289,8 +308,8 @@
     }
 
     .navigation {
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .hiw-line3 {
@@ -320,8 +339,7 @@
     }
 
     .navigation {
-        flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
     }
 }
 
@@ -404,6 +422,9 @@
 }
 
 @media screen and (max-width: 715px) {
+    :root {
+        --border-radius: 15px;
+      }
     .hiw-lines-small {
         display: block;
     }
@@ -505,6 +526,9 @@
 }
 
 @media screen and (max-width: 576px) {
+    .logo {
+        display: none;
+    }
     .hiw-line3 {
         height: 30%;
         top: 54%;
@@ -583,6 +607,7 @@
 
     .navigation {
         padding: 5px 0;
+        justify-content: center;
     }
 
     .panel-link {
@@ -628,6 +653,9 @@
 }
 
 @media screen and (max-width: 400px) {
+    .hiw-wrapper {
+        padding: 20px 5px
+    }
     .hiw-line3 {
         height: 30%;
         top: 51%;
@@ -647,6 +675,7 @@
 
     .footer {
         border-radius: 15px;
+        padding: 20px 10px;
     }
 
     .MonBold-big {
