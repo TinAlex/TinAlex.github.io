@@ -1,4 +1,54 @@
-@media screen and (max-width: 1720px) {
+@media screen and (max-width: 1728px) {
+    .logo-letters {
+        font-size: 120px;
+        font-family: 'MontserratExtraBold';
+        font-weight: 800;
+      }
+      .MonExtraBold {
+        font-size: 50px;
+        font-family: 'MontserratExtraBold';
+        font-weight: 800;
+      }
+      
+      .MonBold-big {
+        font-size: 43.2px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color: #000000
+      }
+      
+      .MonBold-small {
+        font-size: 25px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color: #555454
+      }
+      
+      .MonSemiBold {
+        font-size: 36px;
+        font-family: 'MontserratSemiBold';
+        font-weight: bold;
+        color: #000000
+      }
+      
+      .HelvReg-big {
+        font-family: 'Helvetica';
+        font-weight: normal;
+        font-size: 30px;
+        color: #000000
+      }
+      
+      .HelvReg-small {
+        font-family: 'Helvetica';
+        font-weight: normal;
+        font-size: 21px;
+        color: #000000
+      }
+
+    .hiw-img {
+        max-height: 250px;
+    }
+      
     :root {
         --border-radius: 56px;
       }
@@ -30,9 +80,14 @@
 
 }
 
-/* @media screen and (max-width: 1420px) {  */
 
-@media screen and (max-width: 1420px) {
+@media screen and (max-width: 1440px) {
+    .hiw-img {
+        max-height: 220px;
+    }
+    .hero-container {
+        padding: 100px 100px;
+    }
     .footer-link-img {
         max-height: 120px ;
       }
@@ -59,11 +114,11 @@
     }
 
     .logo-letters {
-        font-size: 112px;
+        font-size: 114px;
     }
 
     .MonExtraBold {
-        font-size: 40px;
+        font-size: 50px;
         font-weight: 800;
     }
 
@@ -76,19 +131,19 @@
     }
 
     .MonBold-small {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .MonSemiBold {
-        font-size: 33px;
+        font-size: 35px;
     }
 
     .HelvReg-big {
-        font-size: 28px;
+        font-size: 29px;
     }
 
     .HelvReg-small {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     @keyframes slide {
@@ -523,11 +578,75 @@
     .hero-text {
         text-align: center;
     }
+    .hero-content-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 576px) {
-    .logo {
+    .hero-content-right {
+        align-items: start;
+    }
+    .hero-container {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .header-text {
+        display: block;
+    }
+    .navigation__mobile--active {
+        display: block;
+      }
+    .navigation__mobile {
+        background-color: white;
+        border: 1px solid black;
+        right: 5%;
+        top: 2%;
+        list-style: none;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        padding: 0 30px;
+        padding-top: 30px;
+    }
+    .burger {
+        transform-origin: left;
+        transition: all 0.3s ease-in-out, transform 0.3s ease-in-out, left 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+    .burger__line:first-child {
+        width: 67%;
+        transform: rotate(45deg);
+    }
+    .burger__line:nth-child(2) {
         display: none;
+
+    }
+    .burger__line:last-child {
+        width: 67%;
+        transform: rotate(-45deg);
+    }
+
+/*  */
+    .header__nav-icon {
+        display: block;
+    }
+    .header__nav-icon:active,.header__nav-icon:hover, .header__nav-icon:focus {
+        border: none;
+        outline: none;
+    }
+
+
+   
+    .logo {
+        padding-left: 0;
+    }
+
+    .nav__panel {
+        display: none !important;
     }
     .hiw-line3 {
         height: 30%;
@@ -584,7 +703,7 @@
     }
 
     .hero-container {
-        padding: 30px 20px;
+        padding: 20px 7px;
     }
 
     .hiw-titles {
@@ -602,37 +721,31 @@
     }
 
     .logo-svg {
-        width: 30px;
+        width: 50px;
     }
 
     .navigation {
-        padding: 5px 0;
-        justify-content: center;
+        padding: 10px 20px !important;
+        justify-content: space-between;
     }
 
-    .panel-link {
-        font-size: 10px;
-        line-height: 1px;
-    }
+    
 
     .logo-letters {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .MonExtraBold {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .MonBold-big {
-        font-size: 17px;
+        font-size: 19px;
     }
 
-    .MonBold-big {
-        font-size: 17px;
-    }
 
     .MonBold-small {
-        font-size: 6px;
+        font-size: 5px;
     }
 
     .start-btn-size {
@@ -644,15 +757,28 @@
     }
 
     .HelvReg-big {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .HelvReg-small {
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .hero-text {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .navigation, .hero, .how-it-works,.team,.footer {
+        width: 95%;
+    }
+    .about-proj {
+        width: 81.5%;
     }
 }
 
 @media screen and (max-width: 400px) {
+    .hero-text {
+        width: 100%;
+    }
     .hiw-wrapper {
         padding: 20px 5px
     }
