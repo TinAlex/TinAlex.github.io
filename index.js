@@ -1,52 +1,55 @@
-// let slides = document.getElementsByClassName("slider__slide");
-// let navlinks = document.getElementsByClassName("slider__navlink");
-// let currentSlide = 0;
+let btn = document.querySelector('.header__nav-icon')
+let line = document.querySelectorAll('.burger')
+let nav = document.querySelector('.navigation__mobile')
+btn.addEventListener('click',()=>{
+	nav.classList.toggle('navigation__mobile--active')
+	line.forEach(function(element){
+		element.classList.toggle('burger__line')
+	  })
+})
 
-// document.getElementById("nav-button--next").addEventListener("click", () => {
-//     changeSlide(currentSlide + 1)
+
+// const swiper = new Swiper('.swiper', {
+// 	autoplay: {
+// 		delay: 5000,
+// 	  },
+// 	// Optional parameters
+// 	direction: 'horizontal',
+// 	loop: true,
+// 	slidesPerView: 1,
+
+// 	// If we need pagination
+// 	pagination: {
+// 		el: '.swiper-pagination',
+// 	},
+
+// 	// Navigation arrows
+// 	navigation: {
+// 		nextEl: '.swiper-button-next',
+// 		prevEl: '.swiper-button-prev',
+// 	},
+
+// 	// And if we need scrollbar
+// 	scrollbar: {
+// 		el: '.swiper-scrollbar',
+// 	},
 // });
-// document.getElementById("nav-button--prev").addEventListener("click", () => {
-//     changeSlide(currentSlide - 1)
-// });
 
-// function changeSlide(moveTo) {
-//     if (moveTo >= slides.length) {moveTo = 0;}
-//     if (moveTo < 0) {moveTo = slides.length - 1;}
-    
-//     slides[currentSlide].classList.toggle("active");
-//     navlinks[currentSlide].classList.toggle("active");
-//     slides[moveTo].classList.toggle("active");
-//     navlinks[moveTo].classList.toggle("active");
-    
-//     currentSlide = moveTo;
-// }
-
-// document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
-//     bullet.addEventListener('click', () => {
-//         if (currentSlide !== bulletIndex) {
-//             changeSlide(bulletIndex);
-//         }
-//     })
-// })
-const swiper = new Swiper('.swiper', {
-	// Optional parameters
-	direction: 'horizontal',
-	loop: true,
-	slidesPerView:1,
-  
-	// If we need pagination
+var swiper = new Swiper('.swiper', {
+	slidesPerView: 1,
+	spaceBetween: 30,
 	pagination: {
 	  el: '.swiper-pagination',
+	  clickable: true,
 	},
-  
-	// Navigation arrows
-	navigation: {
-	  nextEl: '.swiper-button-next',
-	  prevEl: '.swiper-button-prev',
+	breakpoints: {
+	  768: {
+		slidesPerView: 'auto',
+		spaceBetween: 10
+	  }
 	},
-  
-	// And if we need scrollbar
-	scrollbar: {
-	  el: '.swiper-scrollbar',
+		navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	},
   });
