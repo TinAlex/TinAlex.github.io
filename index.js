@@ -35,21 +35,49 @@ btn.addEventListener('click',()=>{
 // 	},
 // });
 
-var swiper = new Swiper('.swiper', {
+
+var swiper = new Swiper(".mySwiper", {
 	slidesPerView: 1,
-	spaceBetween: 30,
-	pagination: {
-	  el: '.swiper-pagination',
-	  clickable: true,
+	centeredSlides: false,
+	slidesPerGroupSkip: 1,
+	grabCursor: true,
+	keyboard: {
+	  enabled: true,
 	},
 	breakpoints: {
-	  768: {
-		slidesPerView: 'auto',
-		spaceBetween: 10
-	  }
+	  769: {
+		slidesPerView: 2,
+		slidesPerGroup: 2,
+	  },
 	},
-		navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+	scrollbar: {
+	  el: ".swiper-scrollbar",
+	},
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
 	},
   });
+
+// var swiper = new Swiper('.swiper', {
+// 	slidesPerView: 1,
+// 	spaceBetween: 30,
+// 	pagination: {
+// 	  el: '.swiper-pagination',
+// 	  clickable: true,
+// 	},
+// 	breakpoints: {
+// 	  768: {
+// 		slidesPerView: 'auto',
+// 		spaceBetween: 10
+// 	  }
+// 	},
+// 		navigation: {
+// 		nextEl: '.swiper-button-next',
+// 		prevEl: '.swiper-button-prev',
+// 	},
+//   });
