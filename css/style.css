@@ -3,9 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100% !important;
-}
-.swiper-slide.swiper-slide-active {
 }
 
 .swiper-container {
@@ -218,6 +215,12 @@ html {
 .nav__panel__el {
   text-align: center;
 }
+.nav__panel__el-mobile {
+  padding-left: 20px;
+  text-align: start;
+  border-bottom: 1px solid ;
+}
+
 
 .panel-link {
     list-style: none;
@@ -292,7 +295,7 @@ html {
 }
 .header-text {
   display: none;
-  font-size: 7px;
+  font-size: 9px;
   font-family: 'MontserratSemiBold';
   font-weight: bold;
   color: #000000
@@ -303,10 +306,14 @@ html {
 .start-btn {
   background: linear-gradient(0.25turn, #ff9448, #F8460E);
   border-radius: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
   border: none;
+  padding: 10px 10px;
   min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
   
   .slider-wrapper {
@@ -499,6 +506,8 @@ html {
     padding: 5px 20px;
     margin-bottom: 10px;
     text-align: center;
+    margin: 0 auto;
+    width: 90%;
 
 }
 /* .swiper {
