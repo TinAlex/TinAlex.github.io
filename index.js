@@ -1,12 +1,32 @@
 let btn = document.querySelector('.header__nav-icon')
 let line = document.querySelectorAll('.burger')
 let nav = document.querySelector('.navigation__mobile')
+let navLinks = document.querySelectorAll('.nav__panel__el-mobile')
+navLinks.forEach(link=>{
+	link.addEventListener('click', ()=>{
+		nav.classList.toggle('navigation__mobile--active')
+		line.forEach(function(element){
+			element.classList.toggle('burger__line')
+		  })
+	})
+})
 btn.addEventListener('click',()=>{
 	nav.classList.toggle('navigation__mobile--active')
 	line.forEach(function(element){
 		element.classList.toggle('burger__line')
 	  })
 })
+
+// document.addEventListener( 'click', (e) => {
+// 	if (nav.classList.contains('navigation__mobile--active')) {
+// 		const withinBoundaries = e.composedPath().includes(nav);
+// 		if ( ! withinBoundaries ) {
+// 			console.log('lol')
+// 			nav.classList.remove('navigation__mobile--active'); // скрываем элемент т к клик был за его пределами
+// 		}
+// 	}
+	
+// })
 
 
 // const swiper = new Swiper('.swiper', {
@@ -37,6 +57,9 @@ btn.addEventListener('click',()=>{
 
 
 var swiper = new Swiper(".mySwiper", {
+	autoplay: {
+		delay: 5000,
+		},
 	slidesPerView: 1,
 	centeredSlides: false,
 	slidesPerGroupSkip: 1,
@@ -81,3 +104,7 @@ var swiper = new Swiper(".mySwiper", {
 // 		prevEl: '.swiper-button-prev',
 // 	},
 //   });
+if (screen.width<576) {
+	document.querySelector('.hero-fix-help').innerHTML = 'с'
+	document.querySelector('.hero-title').innerHTML = 'Дружба начинается'
+}
