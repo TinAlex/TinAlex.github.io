@@ -661,8 +661,8 @@
     }
 
     .slider-wrapper {
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
     }
 
     .hero-content {
@@ -690,14 +690,10 @@
         text-align: center;
     }
 
-    .hero-text {
+    /* .hero-text {
         text-align: center;
-    }
-    .hero-content-right {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    } */
+  
     
 }
 @media screen and (max-width: 769px) { 
@@ -708,6 +704,29 @@
     }
 }
 @media screen and (max-width: 576px) {
+    .hero-content-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-mid-text {
+        font-size: 11px ;
+        font-family: 'MontserratSemiBold';
+        font-weight: bold;
+        color: #000000;
+        margin: 0;
+    }
+    .for-small-window {
+        display: block;
+    }
+    .for-big-window {
+        display: none;
+    }
     .swiper-container {
         max-width: 350px;
         max-height: 500px;
@@ -727,7 +746,7 @@
     .hero-container {
         flex-direction: row;
         justify-content: space-between;
-        align-items: start;
+        align-items: center;
         padding: 50px 50px;
 
     }
@@ -759,7 +778,7 @@
         z-index: 1;
         padding: 0 0;
         padding-top: 30px;
-        min-height: 200px;
+        min-height: 400px;
         box-shadow: -1px 1px 6px 0.5px #555454;
         opacity: 0.9;
 
@@ -814,7 +833,8 @@
     }
 
     .start-btn {
-      padding: 5px 10px;
+        border-radius: var(--border-radius);
+      padding: 7px 15px;
     }
 
     .footer-link {
@@ -883,11 +903,11 @@
     
 
     .logo-letters {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .MonExtraBold {
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .MonBold-big {
@@ -898,9 +918,13 @@
     .MonBold-small {
         font-size: 9px;
     }
+    .start-btn {
+        padding: 3px 7px;
 
+    }
     .start-btn-size {
         font-size: 8px !important;
+        border-radius: var(--border-radius);
     }
 
     .MonSemiBold {
@@ -998,6 +1022,7 @@
           margin-top: -400px;
         }
       }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -1050,8 +1075,9 @@
 
   
     .start-btn {
-        padding: 3px 7px;
-        min-width: 60px;
+        padding: 3px 5px;
+        border-radius: var(--border-radius);
+        /* min-width: 60px; */
     }
     .footer {
         border-radius: 15px;
