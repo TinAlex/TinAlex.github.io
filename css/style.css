@@ -216,7 +216,8 @@ html {
   text-align: center;
 }
 .nav__panel__el-mobile {
-  padding-left: 20px;
+  padding:15px 20px;
+
   text-align: start;
   border-bottom: 1px solid ;
 }
@@ -286,6 +287,10 @@ html {
   font-weight: bold;
 }
 
+.for-small-window {
+  display: none;
+}
+
 .hero-text {
   margin-bottom: 40px;
   width: 60%;
@@ -305,12 +310,12 @@ html {
 
 .start-btn {
   background: linear-gradient(0.25turn, #ff9448, #F8460E);
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   /* padding-top: 10px;
   padding-bottom: 10px; */
   border: none;
-  padding: 10px 10px;
-  min-width: 100px;
+  padding: 10px 30px;
+  /* min-width: 100px; */
   display: flex;
   justify-content: center;
   align-items: center;
