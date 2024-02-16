@@ -104,7 +104,3 @@ var swiper = new Swiper(".mySwiper", {
 // 		prevEl: '.swiper-button-prev',
 // 	},
 //   });
-if (screen.width<576) {
-	document.querySelector('.hero-fix-help').innerHTML = 'с'
-	document.querySelector('.hero-title').innerHTML = 'Дружба начинается'
-}
