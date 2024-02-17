@@ -36,11 +36,14 @@
     }
   }
 @media screen and (max-width: 2030px) { 
-    .slider {
-        /* margin-left: -40px; */
+    .swiper-container {
+        max-height: 1330px;
     }
 }
 @media screen and (max-width: 1950px) { 
+    .swiper-container {
+        max-height: 1250px;
+    }
     .MonExtraBold {
         font-size: 70px;
     }
@@ -53,6 +56,12 @@
         left: 12%;
       }
 }
+@media screen and (max-width: 1820px) { 
+    .swiper-container {
+        max-height: 1200px;
+    }   
+}
+
 
 @media screen and (max-width: 1728px) {
     .swiper-container {
@@ -309,6 +318,11 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .footer-link-img {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        max-height: 100px;
+    }
     .swiper-container {
         max-height: 700px;
     }
@@ -697,6 +711,9 @@
     
 }
 @media screen and (max-width: 769px) { 
+    .team-header {
+        margin-bottom: 10px;
+    }
     .swiper-container {
         max-width: 450px;
         max-height: 680px;
@@ -704,6 +721,12 @@
     }
 }
 @media screen and (max-width: 576px) {
+    .team-header {
+        margin-bottom: 5px;
+    }
+    .team-text {
+        margin-bottom: 5px;
+    }
     .hero-content-right {
         display: flex;
         flex-direction: column;
@@ -778,7 +801,7 @@
         z-index: 1;
         padding: 0 0;
         padding-top: 30px;
-        min-height: 400px;
+        /* min-height: 400px; */
         box-shadow: -1px 1px 6px 0.5px #555454;
         opacity: 0.9;
 
@@ -979,7 +1002,8 @@
         background-size: 200%,200%,200%,200%;
         background-position: center 10%,center 40%, center 60%,center 100%;
         background-repeat: no-repeat,no-repeat, no-repeat, no-repeat;
-      }
+       
+    }
       .slider div {
         margin-bottom: 0px;
     }
