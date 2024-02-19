@@ -1,4 +1,4 @@
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 320px) {
     
     .swiper-slide:first-child {
       transition: transform 1000ms;
@@ -845,10 +845,10 @@
         list-style: none;
         position: absolute;
         margin: 0;
-        z-index: 1;
+        z-index: 2;
         padding: 0 0;
         padding-top: 60px;
-        min-height: 200%;
+        min-height: 100%;
         box-shadow: -1px 1px 6px 0.5px #555454;
         opacity: 0.98;
 
@@ -958,7 +958,9 @@
     }
 
     .fact-card {
+        max-width: 300px;
         padding: 30px 10px;
+        margin: 0 auto;
     }
 
     .navigation {
