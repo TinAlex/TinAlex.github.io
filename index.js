@@ -58,7 +58,7 @@ btn.addEventListener('click',()=>{
 
 var swiper = new Swiper(".mySwiper", {
 	autoplay: {
-		delay: 5000,
+		delay: 10000,
 		},
 	slidesPerView: 1,
 	centeredSlides: false,
