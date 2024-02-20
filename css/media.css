@@ -79,6 +79,15 @@
 
 
 @media screen and (max-width: 1728px) {
+    .footer-links {
+        min-width: 430px;
+    }
+    .footer-text {
+        max-width: 65%;
+    }
+    .footer-link-img {
+        max-height: 125px;
+    }
     .fact-card {
         padding: 70px 20px; 
     }
@@ -231,6 +240,15 @@
 
 
 @media screen and (max-width: 1440px) {
+    .footer-links {
+        min-width: 430px;
+    }
+    .footer-text {
+        max-width: 65%;
+    }
+    .footer-link-img {
+        max-height: 125px;
+    }
     
     .swiper-container {
         max-height: 800px; 
@@ -471,6 +489,9 @@
 }
 
 @media screen and (max-width: 1035px) {
+    .footer-links {
+        min-width: 250px;
+    }
     .swiper-container {
         max-height: 600px;
     }
@@ -577,7 +598,13 @@
         right: -2%;
     }
 }
-
+@media screen and (max-width: 822px) {
+    .hiw-line1 {
+        height: 31%;
+        top: 39%;
+        left: -15%;
+    }
+}
 @media screen and (max-width: 820px) {
     .fact-card {
         padding: 50px 20px; 
@@ -642,7 +669,7 @@
 @media screen and (max-width: 760px) {
     .hiw-line1 {
         height: 31%;
-        top: 43%;
+        top: 40%;
         left: -18%;
     }
     .fact {
@@ -652,6 +679,9 @@
 }
 
 @media screen and (max-width: 715px) {
+    .footer-text {
+        max-width: 100%;
+    }
     :root {
         --border-radius: 30px;
       }
@@ -664,13 +694,13 @@
     }
 
     .hiw-line3 {
-        top: 58%;
-        left: 21%;
+        top: 53%;
+        left: 15%;
     }
 
     .hiw-line4 {
-        top: 29%;
-        right: 22%;
+        top: 23%;
+        right: 19%;
     }
 
     .logo-svg {
@@ -723,6 +753,7 @@
     }
 
     .hero-content {
+        margin-right: 10px;
         justify-content: center;
     }
 
@@ -770,7 +801,7 @@
 }
 @media screen and (max-width: 674px) { 
     .swiper-container {
-        max-height: 380px;
+        max-height: 400px;
     }
 }
 @media screen and (max-width: 614px) { 
@@ -779,6 +810,17 @@
     }
 }
 @media screen and (max-width: 576px) {
+    .hiw-line3 {
+        height: 33%;
+        top: 55%;
+        left: 8%;
+    }
+
+    .hiw-line4 {
+        height: 30%;
+        top: 25%;
+        right: 3%;
+    }
     .hero {
         margin-bottom: 30px;
     }
@@ -822,6 +864,7 @@
     .slider-wrapper {
         display: flex;
         flex-direction: column;
+        align-items: start;
     }
 
     .footer-header {
@@ -835,7 +878,8 @@
         margin: 0;
     }
     .for-small-window {
-        display: block;
+        display: flex;
+        justify-content: center;
     }
     .for-big-window {
         display: none;
@@ -846,7 +890,7 @@
     }
     .slider {
         padding-left: 0;
-        height: 25px;
+        height: 36px;
     }
     .hero-title {
         text-align: start;
@@ -859,7 +903,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 50px 80px;
+        padding: 50px 60px;
 
     }
     .header-text {
@@ -932,24 +976,12 @@
     .nav__panel {
         display: none !important;
     }
-    .hiw-line3 {
-        height: 30%;
-        top: 54%;
-        left: 11%;
-    }
-
-    .hiw-line4 {
-        height: 33%;
-        top: 21%;
-        right: 7%;
-    }
+  
 
     
 
     .footer-link {
         max-width: 70px;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
     }
 
     .footer-text {
@@ -1031,11 +1063,16 @@
     }
     /* 576 размер */
     .start-btn {
-        font-size: 11px;
+        font-size: 9px;
     }
-
+    .slider-text-3 {
+        display: flex;
+    }
     .logo-letters {
-        font-size: 45px;
+        font-size: 40px;
+        display: block;
+        padding-right: 5px;
+
     }
 
     .MonExtraBold {
@@ -1068,6 +1105,7 @@
         max-width: 90%;
     }
     .hero-text {
+        max-width: 158px;
         width: 100%;
         margin-bottom: 10px;
         text-align: left;
@@ -1096,6 +1134,7 @@
     .footer-links {
         width: 100%;
         max-width: 190px;
+        /* min-width: 300px; */
         justify-content: center;
         margin-bottom: 22px;
     }
@@ -1107,8 +1146,8 @@
     }
     .main-container {
         background-image: url(../img/Линии.svg),url(../img/Линии_reverse.svg),url(../img/Линии.svg),url(../img/Линии_reverse.svg);
-        background-size: 200%,200%,200%,200%;
-        background-position: center 10%,center 40%, center 60%,center 100%;
+        background-size: 100%,125%,150%,125%;
+        background-position: center -5%,center 11%, center 30%,center 90%;
         background-repeat: no-repeat,no-repeat, no-repeat, no-repeat;
        
     }
@@ -1117,48 +1156,44 @@
     }
     @keyframes slide {
         0% {
-          margin-top: 0px;
+          margin-top: -3px;
         }
         10% {
-          /* For stopping effect */
-          margin-top: 0px;
+          margin-top: -3px;
         }
         20% {
-          margin-top: -52px;
+          margin-top: -53px;
         }
         30% {
-          /* For stopping effect */
-          margin-top: -52px;
+          margin-top: -53px;
         }
         40% {
-          margin-top: -135px;
+          margin-top: -115px;
         }
         50% {
-          /* For stopping effect */
-          margin-top: -135px;
+          margin-top: -115px;
         }
         60% {
-          margin-top: -300px;
+          margin-top: -303px;
         }
         70% {
-          margin-top: -300px;
+          margin-top: -303px;
         }
         80% {
-          /* For stopping effect */
-          margin-top: -352px;
+          margin-top: -353px;
         }
         90% {
-          margin-top: -352px;
+          margin-top: -353px;
         }
         100% {
-          margin-top: -400px;
+          margin-top: -403px;
         }
-      }
+      } 
 
 }
 @media screen and (max-width: 500px) { 
     .hero-container {
-        padding: 50px 50px ;
+        padding: 50px 20px ;
     }
     .swiper-container {
         max-height: 260px;
@@ -1168,24 +1203,69 @@
     .hero-container {
         padding: 50px 30px ;
     }
-}
-@media screen and (max-width: 674px) { 
-    .swiper-container {
-        max-height: 225px;
+    .hiw-line3 {
+        height: 32%;
+        top: 54%;
+        left: 3%;
+    }
+
+    .hiw-line4 {
+        height: 30%;
+        top: 24%;
+        right: 1%;
     }
 }
+
 @media screen and (max-width: 400px) {
+    .swiper-container {
+        max-height: 235px;
+    }
+    /* @keyframes slide {
+        0% {
+          margin-top: -3px;
+        }
+        10% {
+          margin-top: -3px;
+        }
+        20% {
+          margin-top: -53px;
+        }
+        30% {
+          margin-top: -53px;
+        }
+        40% {
+          margin-top: -130px;
+        }
+        50% {
+          margin-top: -130px;
+        }
+        60% {
+          margin-top: -303px;
+        }
+        70% {
+          margin-top: -303px;
+        }
+        80% {
+          margin-top: -353px;
+        }
+        90% {
+          margin-top: -353px;
+        }
+        100% {
+          margin-top: -403px;
+        }
+      } */
     :root {
         --border-radius: 20px;
       }
     
     
-    .main-container {
+    /* .main-container {
         background-image: url(../img/Линии.svg),url(../img/Линии_reverse.svg),url(../img/Линии.svg),url(../img/Линии_reverse.svg);
         background-size: 200%,200%,200%,200%;
         background-position: center 0%,center 32%, center 60%,center 100%;
         background-repeat: no-repeat,no-repeat, no-repeat, no-repeat;
-    }
+    } */
     .hero-text {
         line-height: normal;
     }
@@ -1195,6 +1275,7 @@
     }
     .slider-wrapper {
         align-items: start;
+        
     }
     .footer-link {
         max-width: 60px;
@@ -1209,6 +1290,7 @@
         min-width: 300px;
     }
     .hero-text {
+
         width: 100%;
         max-width: 130px;
     }
@@ -1217,14 +1299,14 @@
     }
     .hiw-line3 {
         height: 30%;
-        top: 51%;
-        left: 8%;
+        top: 54%;
+        left: 3%;
     }
 
     .hiw-line4 {
-        height: 33%;
-        top: 21%;
-        right: 7%;
+        height: 28%;
+        top: 24%;
+        right: 3%;
     }
 
   
@@ -1236,17 +1318,20 @@
         border-radius: 15px;
         padding: 20px 10px;
     }
+    .footer-links {
+        min-width: 200px;
+    }
     /* 400 размер */
     .start-btn {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .logo-letters {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .MonExtraBold {
-        font-size: 21px;
+        font-size: 19px;
     }
 
     .MonBold-big {
