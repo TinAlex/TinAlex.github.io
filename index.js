@@ -17,45 +17,6 @@ btn.addEventListener('click',()=>{
 	  })
 })
 
-// document.addEventListener( 'click', (e) => {
-// 	if (nav.classList.contains('navigation__mobile--active')) {
-// 		const withinBoundaries = e.composedPath().includes(nav);
-// 		if ( ! withinBoundaries ) {
-// 			console.log('lol')
-// 			nav.classList.remove('navigation__mobile--active'); // скрываем элемент т к клик был за его пределами
-// 		}
-// 	}
-	
-// })
-
-
-// const swiper = new Swiper('.swiper', {
-// 	autoplay: {
-// 		delay: 5000,
-// 	  },
-// 	// Optional parameters
-// 	direction: 'horizontal',
-// 	loop: true,
-// 	slidesPerView: 1,
-
-// 	// If we need pagination
-// 	pagination: {
-// 		el: '.swiper-pagination',
-// 	},
-
-// 	// Navigation arrows
-// 	navigation: {
-// 		nextEl: '.swiper-button-next',
-// 		prevEl: '.swiper-button-prev',
-// 	},
-
-// 	// And if we need scrollbar
-// 	scrollbar: {
-// 		el: '.swiper-scrollbar',
-// 	},
-// });
-
-
 var swiper = new Swiper(".mySwiper", {
 	autoplay: {
 		delay: 10000,
@@ -86,22 +47,3 @@ var swiper = new Swiper(".mySwiper", {
 	},
   
 });
-
-// var swiper = new Swiper('.swiper', {
-// 	slidesPerView: 1,
-// 	spaceBetween: 30,
-// 	pagination: {
-// 	  el: '.swiper-pagination',
-// 	  clickable: true,
-// 	},
-// 	breakpoints: {
-// 	  768: {
-// 		slidesPerView: 'auto',
-// 		spaceBetween: 10
-// 	  }
-// 	},
-// 		navigation: {
-// 		nextEl: '.swiper-button-next',
-// 		prevEl: '.swiper-button-prev',
-// 	},
-//   });
