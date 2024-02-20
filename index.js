@@ -68,7 +68,7 @@ var swiper = new Swiper(".mySwiper", {
 	  enabled: true,
 	},
 	breakpoints: {
-	  769: {
+	  0: {
 		slidesPerView: 2,
 		slidesPerGroup: 2,
 	  },
@@ -84,7 +84,8 @@ var swiper = new Swiper(".mySwiper", {
 	  el: ".swiper-pagination",
 	  clickable: true,
 	},
-  });
+  
+});
 
 // var swiper = new Swiper('.swiper', {
 // 	slidesPerView: 1,
