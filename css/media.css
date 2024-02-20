@@ -1,8 +1,23 @@
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 0px) {
+
+    /* .swiper-wideSlide {
+        position: absolute !important;
+        width: 100% !important;
+
+    } */
     
     .swiper-slide:first-child {
-      transition: transform 1000ms;
+      /* transition: transform 10ms; */
     }
+
+    /* .swiper-slide {
+        opacity: 0;
+        transition: opacity ease-in-out 300ms;
+    }
+    .swiper-slide-active,.swiper-slide-next {
+         transition: all ease-in-out 10s; 
+        opacity: 1; 
+    } */
 
     .swiper-slide:first-child img {
       transition: box-shadow 500ms;
@@ -581,7 +596,7 @@
 
     .logo-svg,
     .footer-logo-img {
-        width: 60px;
+        width: 100px;
     }
 
    
@@ -740,15 +755,36 @@
 }
 @media screen and (max-width: 769px) { 
     .team-header {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     .swiper-container {
-        max-width: 450px;
-        max-height: 680px;
+        max-width: 90%;
+        max-height: 450px;
         margin: 0 auto;
     }
 }
+@media screen and (max-width: 726px) { 
+    .swiper-container {
+        max-height: 400px;
+    }
+}
+@media screen and (max-width: 674px) { 
+    .swiper-container {
+        max-height: 380px;
+    }
+}
+@media screen and (max-width: 614px) { 
+    .swiper-container {
+        max-height: 360px;
+    }
+}
 @media screen and (max-width: 576px) {
+    .hero {
+        margin-bottom: 30px;
+    }
+    .wrapper{
+        margin: 0;
+    }
     .panel-link {
         font-size: 15px;
         font-family: 'Montserrat';
@@ -757,6 +793,7 @@
     }
     .navigation {
         border-radius: 7px;
+        margin-bottom: 15px;
     }
     :root {
         --border-radius: 25px;
@@ -767,12 +804,15 @@
         border-radius: 6px;
     }
     .team-header {
-        margin-bottom: 5px;
+        margin-bottom: 20px;
     }
     .team-text {
-        margin-bottom: 5px;
+        margin-bottom: 30px;
         padding: 0;
         width: 95%;
+    }
+    .team {
+        margin-bottom: 30px;
     }
     .hero-content-right {
         display: flex;
@@ -784,6 +824,9 @@
         flex-direction: column;
     }
 
+    .footer-header {
+        margin-bottom: 25px;
+    }
     .header-mid-text {
         font-size: 11px ;
         font-family: 'MontserratSemiBold';
@@ -798,8 +841,7 @@
         display: none;
     }
     .swiper-container {
-        max-width: 350px;
-        max-height: 500px;
+        max-height: 320px;
         margin: 0 auto;
     }
     .slider {
@@ -817,7 +859,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 50px 50px;
+        padding: 50px 80px;
 
     }
     .header-text {
@@ -911,8 +953,14 @@
     }
 
     .footer-text {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         width: 75%;
+    }
+
+
+
+    .footer-contacts {
+        margin-bottom: 20px;
     }
 
     .hiw-img {
@@ -924,7 +972,8 @@
         border-radius: 15px;
     }
 
-    .fact-text,
+    /* .fact-text */
+
     .hiw-text {
         padding: 0 20px;
     }
@@ -933,16 +982,25 @@
         text-align: center;
     }
 
-
+    .hiw-header {
+        margin-bottom: 40px;
+    }
     
-
+    .hiw-wrapper {
+        padding: 30px 5px;
+    }
     .hiw-titles {
         text-align: center;
     }
 
     .hiw-block {
         justify-content: center;
+        margin-bottom: 45px;
     }
+    .hiw-block:last-child {
+        margin-bottom: 0;
+    }
+
 
     .hero-text,
     .hiw-text {
@@ -967,15 +1025,21 @@
         padding: 10px 20px !important;
         justify-content: space-between;
     }
-
-    
+    .slider div {
+        padding-right: 0;
+        text-align: start;
+    }
+    /* 576 размер */
+    .start-btn {
+        font-size: 11px;
+    }
 
     .logo-letters {
-        font-size: 30px;
+        font-size: 45px;
     }
 
     .MonExtraBold {
-        font-size: 19px;
+        font-size: 24px;
     }
 
     .MonBold-big {
@@ -990,15 +1054,15 @@
    
 
     .MonSemiBold {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .HelvReg-big {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .HelvReg-small {
-        font-size: 12px;
+        font-size: 14px;
     }
     .fact-text {
         max-width: 90%;
@@ -1016,28 +1080,30 @@
         width: 81.5%;
     }
     .about-proj__img {
-        max-width: 50px;
-        top: -25px;
+        max-width: 65px;
+        top: -32.5px;
     }
 
     .fact {
-        margin-bottom: 30px;
+        margin-bottom: 45px;
     }
     .footer-link-img {
-        max-height: 50px;
+        max-height: 70px;
     }
     .footer-link {
-        max-width: 50px;
+        max-width: 70px;
     }
     .footer-links {
         width: 100%;
+        max-width: 190px;
         justify-content: center;
+        margin-bottom: 22px;
     }
     .footer-logo-img {
         max-width: 50px;
     }
     .about-proj__header {
-        margin-bottom: 25px;
+        margin-bottom: 35px;
     }
     .main-container {
         background-image: url(../img/Линии.svg),url(../img/Линии_reverse.svg),url(../img/Линии.svg),url(../img/Линии_reverse.svg);
@@ -1090,11 +1156,29 @@
       }
 
 }
-
+@media screen and (max-width: 500px) { 
+    .hero-container {
+        padding: 50px 50px ;
+    }
+    .swiper-container {
+        max-height: 260px;
+    }
+}
+@media screen and (max-width: 450px) { 
+    .hero-container {
+        padding: 50px 30px ;
+    }
+}
+@media screen and (max-width: 674px) { 
+    .swiper-container {
+        max-height: 225px;
+    }
+}
 @media screen and (max-width: 400px) {
     :root {
         --border-radius: 20px;
       }
+    
     
     .main-container {
         background-image: url(../img/Линии.svg),url(../img/Линии_reverse.svg),url(../img/Линии.svg),url(../img/Линии_reverse.svg);
@@ -1113,10 +1197,10 @@
         align-items: start;
     }
     .footer-link {
-        max-width: 40px;
+        max-width: 60px;
     }
     .footer-link-img {
-        max-height: 40px;
+        max-height: 60px;
     }
     .logo-svg {
         width: 36px;
@@ -1146,22 +1230,40 @@
   
     .start-btn {
         padding: 3px 8px;
-        font-size: 7px;
         border-radius: 4px;
     }
     .footer {
         border-radius: 15px;
         padding: 20px 10px;
     }
+    /* 400 размер */
+    .start-btn {
+        font-size: 10px;
+    }
+
+    .logo-letters {
+        font-size: 35px;
+    }
+
+    .MonExtraBold {
+        font-size: 21px;
+    }
 
     .MonBold-big {
         font-size: 19px;
     }
+
+
+    .MonSemiBold {
+        font-size: 17px;
+    }
+
     .HelvReg-big {
         font-size: 12px;
     }
+
     .HelvReg-small {
-        font-size: 11px;
+        font-size: 12px;
     }
     .fact-text {
         max-width: 100%;
@@ -1170,10 +1272,10 @@
 
 
 @media screen and (max-width: 350px) {
-    .HelvReg-small {
+    /* .HelvReg-small {
         font-size: 9px;
-    }
+    } */
     .swiper-container {
-        max-height: 450px;
+        max-height: 200px;
     }
 }
