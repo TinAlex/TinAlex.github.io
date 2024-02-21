@@ -240,6 +240,12 @@
 
 
 @media screen and (max-width: 1440px) {
+    .main-container {
+        background-image: url(../img/Линии.svg), url(../img/Линии_reverse.svg),url(../img/Линии.svg), url(../img/Линии_reverse.svg);
+        background-size: contain, contain, contain, contain;
+        background-position: center -13%, center 21%, center 50%,center 97%;
+        background-repeat: no-repeat, no-repeat, no-repeat,no-repeat;      
+    }
     .footer-links {
         min-width: 430px;
     }
@@ -344,11 +350,11 @@
         }
 
         60% {
-            margin-top: -360px;
+            margin-top: -363px;
         }
 
         70% {
-            margin-top: -360px;
+            margin-top: -363px;
         }
 
         80% {
@@ -361,7 +367,7 @@
         }
 
         100% {
-            margin-top: -550px;
+            margin-top: -565px;
         }
     }
 }
@@ -377,21 +383,21 @@
     }
     @keyframes slide {
         0% {
-            margin-top: 45px;
+            margin-top: 50px;
         }
 
         10% {
             /* For stopping effect */
-            margin-top: 45px;
+            margin-top: 50px;
         }
 
         20% {
-            margin-top: -55px;
+            margin-top: -50px;
         }
 
         30% {
             /* For stopping effect */
-            margin-top: -55px;
+            margin-top: -50px;
         }
 
         40% {
@@ -413,15 +419,15 @@
 
         80% {
             /* For stopping effect */
-            margin-top: -455px;
+            margin-top: -450px;
         }
 
         90% {
-            margin-top: -455px;
+            margin-top: -450px;
         }
 
         100% {
-            margin-top: -540px;
+            margin-top: -550px;
         }
     }
 
@@ -695,12 +701,12 @@
 
     .hiw-line3 {
         top: 53%;
-        left: 15%;
+        left: 17%;
     }
 
     .hiw-line4 {
         top: 23%;
-        right: 19%;
+        right: 20%;
     }
 
     .logo-svg {
@@ -789,24 +795,24 @@
         margin-bottom: 20px;
     }
     .swiper-container {
-        max-width: 90%;
+        max-width: 100%;
         max-height: 450px;
         margin: 0 auto;
     }
 }
 @media screen and (max-width: 726px) { 
     .swiper-container {
-        max-height: 400px;
+        max-height: 410px;
     }
 }
 @media screen and (max-width: 674px) { 
     .swiper-container {
-        max-height: 400px;
+        max-height: 410px;
     }
 }
 @media screen and (max-width: 614px) { 
     .swiper-container {
-        max-height: 360px;
+        max-height: 370px;
     }
 }
 @media screen and (max-width: 576px) {
@@ -841,7 +847,7 @@
         --border-radius: 25px;
       }
     .start-btn {
-        padding: 6px 14px;
+        padding: 4px 8px;
         font-size: 9px;
         border-radius: 6px;
     }
@@ -885,7 +891,7 @@
         display: none;
     }
     .swiper-container {
-        max-height: 320px;
+        max-height: 330px;
         margin: 0 auto;
     }
     .slider {
@@ -1063,7 +1069,7 @@
     }
     /* 576 размер */
     .start-btn {
-        font-size: 9px;
+        font-size: 8px;
     }
     .slider-text-3 {
         display: flex;
@@ -1196,7 +1202,7 @@
         padding: 50px 20px ;
     }
     .swiper-container {
-        max-height: 260px;
+        max-height: 270px;
     }
 }
 @media screen and (max-width: 450px) { 
@@ -1218,9 +1224,9 @@
 
 @media screen and (max-width: 400px) {
     .swiper-container {
-        max-height: 235px;
+        max-height: 245px;
     }
-    /* @keyframes slide {
+    @keyframes slide {
         0% {
           margin-top: -3px;
         }
@@ -1228,22 +1234,22 @@
           margin-top: -3px;
         }
         20% {
-          margin-top: -53px;
+          margin-top: -52px;
         }
         30% {
-          margin-top: -53px;
+          margin-top: -52px;
         }
         40% {
-          margin-top: -130px;
+          margin-top: -112px;
         }
         50% {
-          margin-top: -130px;
+          margin-top: -112px;
         }
         60% {
-          margin-top: -303px;
+          margin-top: -302px;
         }
         70% {
-          margin-top: -303px;
+          margin-top: -302px;
         }
         80% {
           margin-top: -353px;
@@ -1254,7 +1260,8 @@
         100% {
           margin-top: -403px;
         }
-      } */
+      } 
+
     :root {
         --border-radius: 20px;
       }
@@ -1311,7 +1318,7 @@
 
   
     .start-btn {
-        padding: 3px 8px;
+        padding: 3px 6px;
         border-radius: 4px;
     }
     .footer {
@@ -1323,7 +1330,7 @@
     }
     /* 400 размер */
     .start-btn {
-        font-size: 9px;
+        font-size: 8px;
     }
 
     .logo-letters {
@@ -1361,6 +1368,6 @@
         font-size: 9px;
     } */
     .swiper-container {
-        max-height: 200px;
+        max-height: 210px;
     }
 }
