@@ -6,7 +6,8 @@
 
     } */
     
-    .swiper-slide:first-child {
+    .swiper-slide {
+        /* height: 105% !important; */
       /* transition: transform 10ms; */
     }
 
@@ -25,6 +26,7 @@
 
     .swiper-slide.swiper-slide-active:first-child {
         width: 100% !important;
+        /* height: 100% !important; */
         z-index: 2;
     }
 
@@ -52,12 +54,12 @@
   }
 @media screen and (max-width: 2030px) { 
     .swiper-container {
-        max-height: 1330px;
+        max-height: 1275px;
     }
 }
 @media screen and (max-width: 1950px) { 
     .swiper-container {
-        max-height: 1250px;
+        max-height: 1190px;
     }
     .MonExtraBold {
         font-size: 70px;
@@ -73,7 +75,7 @@
 }
 @media screen and (max-width: 1820px) { 
     .swiper-container {
-        max-height: 1200px;
+        max-height: 1130px;
     }   
 }
 
@@ -101,7 +103,7 @@
         font-size: 18px;
     }
     .swiper-container {
-        max-height: 1000px; 
+        max-height: 940px; 
     }
     .slider {
         margin-left: 0;
@@ -153,7 +155,7 @@
       }
 
     .hiw-img {
-        max-height: 250px;
+        max-height: 400px;
     }
       
     :root {
@@ -215,6 +217,39 @@
           margin-top: -560px;
         }
       }
+      .navigation {
+        margin-bottom: 40px;
+      }
+      .hero {
+        margin-bottom: 95px;
+      }
+      .about-proj__header {
+        margin-bottom: 83px;
+      }
+      .about-proj {
+        margin-bottom: 125px;
+      }
+      .how-it-works {
+        margin-bottom: 100px;
+      }
+      .team-header {
+        margin-bottom: 60px;
+      }
+      .team-text {
+        margin-bottom: 60px;
+      }
+      .team {
+        margin-bottom: 95px;
+      }
+    .footer-contacts{
+        margin-bottom: 60px;
+    }
+    .footer-header {
+        margin-bottom: 60px;
+    }
+    .footer {
+        padding: 70px 70px 20px 70px;
+    }
 }
 
 @media screen and (max-width: 1600px) {
@@ -240,6 +275,9 @@
 
 
 @media screen and (max-width: 1440px) {
+    .wrapper {
+        margin-bottom: 40px;
+    }
     .main-container {
         background-image: url(../img/Линии.svg), url(../img/Линии_reverse.svg),url(../img/Линии.svg), url(../img/Линии_reverse.svg);
         background-size: contain, contain, contain, contain;
@@ -257,10 +295,10 @@
     }
     
     .swiper-container {
-        max-height: 800px; 
+        max-height: 780px; 
     }
     .hiw-img {
-        max-height: 220px;
+        max-height: 350px;
     }
     .hero-container {
         padding: 100px 100px;
@@ -379,7 +417,7 @@
         max-height: 100px;
     }
     .swiper-container {
-        max-height: 700px;
+        max-height: 675px;
     }
     @keyframes slide {
         0% {
@@ -590,7 +628,7 @@
 
 @media screen and (max-width: 900px) {
     .swiper-container {
-        max-height: 550px;
+        max-height: 540px;
     }
     .hiw-line1 {
         height: 29%;
@@ -1224,7 +1262,7 @@
 
 @media screen and (max-width: 400px) {
     .swiper-container {
-        max-height: 245px;
+        max-height: 235px;
     }
     @keyframes slide {
         0% {
